@@ -100,3 +100,10 @@ for i in range(num_images):
   plot_value_array(i, predictions[i], test_labels)
 plt.tight_layout()
 plt.show()
+
+
+
+# models are optimized to make predictions on a batch, or collection, of examples at once. Accordingly, even though you're using a single image, you need to add it to a list
+# img = test_images[1] # img.shape = (28, 28)
+# img = (np.expand_dims(img,0)) # img.shape = (1, 28, 28)
+# predictions_single = probability_model.predict(img)
