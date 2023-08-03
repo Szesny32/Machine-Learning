@@ -259,12 +259,12 @@ def update_data(data, id, accuracy, loss, layers):
     data[id - 1]["loss"] = loss
     data[id - 1]["layers"] = layers
     data[id - 1]['date'] = str(datetime.now())
-    save_to_json("dane.json", data)
+    save_to_json("data.json", data)
 
 
 
 # data = init_data()
-# save_to_json("dane.json", data)
+# save_to_json("data.json", data)
 
-data = load_from_json("dane.json")
+data = load_from_json("data.json")
 train(4, data)
