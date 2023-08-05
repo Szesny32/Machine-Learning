@@ -267,4 +267,4 @@ def update_data(data, id, accuracy, loss, layers):
 # save_to_json("data.json", data)
 
 data = load_from_json("data.json")
-train(4, data)
+train(53, data)
